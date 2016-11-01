@@ -1,7 +1,7 @@
 {
   "name": "css-checkbox-radio",
   "description": "Beautify Radio and Checkbox",
-  "main": "",
+  "main": "dist/css-checkbox-radio.css",
   "authors": [
     "chutou"
   ],
@@ -14,7 +14,6 @@
     "css"
   ],
   "homepage": "https://github.com/chutou/css-checkbox-radio",
-  "moduleType": [],
   "ignore": [
     "**/.*",
     "node_modules",

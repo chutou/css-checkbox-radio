@@ -1,4 +1,4 @@
-# Magic-check
+# css-checkbox-radio
 Beautify Radio and Checkbox.
 
 ### Demo
