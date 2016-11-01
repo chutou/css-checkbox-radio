@@ -1,0 +1,26 @@
+{
+  "name": "css-checkbox-radio",
+  "version": "1.0.0",
+  "description": "Beautify Radio and Checkbox",
+  "keywords": [
+    "beautify",
+    "radio",
+    "checkbox",
+    "css3",
+    "css"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chutou/css-checkbox-radio"
+  },
+  "author": "forsigner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chutou/css-checkbox-radio/issues"
+  },
+  "homepage": "https://github.com/chutou/css-checkbox-radio#readme"
+}

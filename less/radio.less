@@ -1,0 +1,27 @@
+.radio + label {
+  &:before {
+    border-radius: 50%;
+  }
+  &:after {
+    top: 6px;
+    left: 6px;
+    width: @dot-size;
+    height: @dot-size;
+    border-radius: 50%;
+    background: @main-color;
+  }
+}
+
+.radio:checked + label {
+  &:before {
+    border: 1px solid @main-color;
+  }
+}
+.radio:checked[disabled] + label {
+  &:before {
+    border: 1px solid @disabled-checked-color;
+  }
+  &:after {
+    background: @disabled-checked-color;
+  }
+}

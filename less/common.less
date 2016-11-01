@@ -1,0 +1,83 @@
+@keyframes hover-color {
+  from {
+    border-color: @border-color;
+  }
+
+  to {
+    border-color: @main-color;
+  }
+}
+
+.radio,
+.checkbox {
+  position: absolute;
+  display: none;
+}
+.radio[disabled],
+.checkbox[disabled] {
+  cursor: not-allowed;
+}
+
+.radio + label,
+.checkbox + label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+  vertical-align: middle;
+
+  &:hover {
+    &:before {
+      animation-duration: 0.4s;
+      animation-fill-mode: both;
+      animation-name: hover-color;
+    }
+  }
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: @checkbox-size;
+    height: @checkbox-size;
+    content: '';
+    border: 1px solid @border-color;
+    box-sizing: border-box;
+  }
+  &:after {
+    position: absolute;
+    display: none;
+    content: '';
+  }
+}
+
+.radio[disabled] + label,
+.checkbox[disabled] + label {
+  cursor: not-allowed;
+  color: @disabled-color;
+  &:hover,
+  &:before,
+  &:after {
+    cursor: not-allowed;
+  }
+  &:hover {
+    &:before {
+      border: 1px solid @disabled-color;
+      animation-name: none;
+    }
+  }
+  &:before {
+    border-color: @disabled-color;
+  }
+}
+
+
+.radio:checked + label,
+.checkbox:checked + label {
+  &:before {
+    animation-name: none;
+  }
+  &:after {
+    display: block;
+  }
+}

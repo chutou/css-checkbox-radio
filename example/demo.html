@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>example</title>
+    <link rel="stylesheet" href="../dist/css-checkbox-radio.css">
+    <style>
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+    }
+    h1{
+        text-align: center;
+        color: #3e97eb;
+    }
+    .col-6 {
+        width: 50%;
+        float: left;
+    }
+    
+    div {
+        margin-top: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>css-checkbox-radio</h1>
+    <div class="col-6">
+        <h2>checkbox</h2>
+        <div>
+            <input class="checkbox" type="checkbox" name="layout" id="1">
+            <label for="1">Normal</label>
+        </div>
+        <div>
+            <input class="checkbox" type="checkbox" name="layout" id="2" checked="checked">
+            <label for="2">Checked</label>
+        </div>
+        <div>
+            <input class="checkbox" type="checkbox" name="layout" id="3" disabled="disabled">
+            <label for="3">
+                Disabled
+            </label>
+        </div>
+        <div>
+            <input class="checkbox" type="checkbox" name="layout" id="4" checked disabled="disabled">
+            <label for="4">Checked && Disabled</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <h2>radio</h2>
+        <div>
+            <input class="radio" type="radio" name="radio" id="11">
+            <label for="11">Normal</label>
+        </div>
+        <div>
+            <input class="radio" type="radio" name="radio" id="22" checked>
+            <label for="22">Checked</label>
+        </div>
+        <div>
+            <input class="radio" type="radio" id="33" disabled="disabled">
+            <label for="33">Disabled</label>
+        </div>
+        <div>
+            <input class="radio" type="radio" id="44" disabled="disabled" checked>
+            <label for="44">Checked && Disabled</label>
+        </div>
+    </div>
+</body>
+
+</html>

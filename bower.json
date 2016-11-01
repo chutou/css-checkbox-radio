@@ -1,0 +1,25 @@
+{
+  "name": "css-checkbox-radio",
+  "description": "Beautify Radio and Checkbox",
+  "main": "",
+  "authors": [
+    "chutou"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "beautify",
+    "radio",
+    "checkbox",
+    "css3",
+    "css"
+  ],
+  "homepage": "https://github.com/chutou/css-checkbox-radio",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
