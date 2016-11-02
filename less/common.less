@@ -12,6 +12,8 @@
 .checkbox {
   position: absolute;
   display: none;
+  font-size: 14px;
+  line-height: 1.42857143;
 }
 .radio[disabled],
 .checkbox[disabled] {
@@ -22,9 +24,13 @@
 .checkbox + label {
   position: relative;
   display: block;
-  padding-left: 30px;
+  padding-left: @checkbox-size*1.5;
   cursor: pointer;
   vertical-align: middle;
+  &.lg {
+    line-height: @checkbox-large-size;
+    padding-left: @checkbox-large-size*1.5;
+  }
 
   &:hover {
     &:before {
@@ -43,6 +49,12 @@
     content: '';
     border: 1px solid @border-color;
     box-sizing: border-box;
+  }
+  &.lg {
+    &:before {
+      width: @checkbox-large-size;
+      height: @checkbox-large-size;
+    }
   }
   &:after {
     position: absolute;

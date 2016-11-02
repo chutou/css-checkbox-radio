@@ -3,12 +3,20 @@
     border-radius: 50%;
   }
   &:after {
-    top: 6px;
-    left: 6px;
+    top: 50%;
+    left: @radio-size/3.3333;
     width: @dot-size;
     height: @dot-size;
     border-radius: 50%;
     background: @main-color;
+    transform: translateY(-50%);
+  }
+  &.lg {
+    &:after {
+      left: @radio-large-size/3;
+      width: @dot-large-size;
+      height: @dot-large-size;
+    }
   }
 }
 
