@@ -1,35 +1,35 @@
-.radio + label {
-  &:before {
-    border-radius: 50%;
-  }
-  &:after {
-    top: 50%;
-    left: @radio-size/3.3333;
-    width: @dot-size;
-    height: @dot-size;
-    border-radius: 50%;
-    background: @main-color;
-    transform: translateY(-50%);
-  }
-  &.lg {
-    &:after {
-      left: @radio-large-size/3;
-      width: @dot-large-size;
-      height: @dot-large-size;
+.radio > input, 
+.radio-inline > input {
+    &:before {
+        border-radius: 50%;
     }
-  }
-}
-
-.radio:checked + label {
-  &:before {
-    border: 1px solid @main-color;
-  }
-}
-.radio:checked[disabled] + label {
-  &:before {
-    border: 1px solid @disabled-checked-color;
-  }
-  &:after {
-    background: @disabled-checked-color;
-  }
+    &:after {
+        top: 50%;
+        left: @radio-size/3.3333;
+        width: @dot-size;
+        height: @dot-size;
+        border-radius: 50%;
+        background: @main-color;
+        transform: translateY(-50%);
+    }
+    &:checked {
+        &:before {
+            border: 1px solid @main-color;
+        }
+        &[disabled] {
+            &:before {
+                border: 1px solid @disabled-checked-color;
+            }
+            &:after {
+                background: @disabled-checked-color;
+            }
+        }
+    }
+    &.lg {
+        &:after {
+            left: @radio-large-size/3;
+            width: @dot-large-size;
+            height: @dot-large-size;
+        }
+    }
 }

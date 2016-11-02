@@ -1,99 +1,94 @@
 @keyframes hover-color {
-  from {
-    border-color: @border-color;
-  }
-
-  to {
-    border-color: @main-color;
-  }
+    from {
+        border-color: @border-color;
+    }
+    to {
+        border-color: @main-color;
+    }
 }
 
 .radio,
-.checkbox {
-  position: absolute;
-  display: none;
-  font-size: 14px;
-  line-height: 1.42857143;
-}
-.radio[disabled],
-.checkbox[disabled] {
-  cursor: not-allowed;
-}
-
-.radio + label,
-.checkbox + label {
-  position: relative;
-  display: inline-block;
-  padding-left: @checkbox-size*1.5;
-  min-width: @checkbox-size;
-  min-height: @checkbox-size;
-  cursor: pointer;
-  vertical-align: middle;
-  &.lg {
-    line-height: @checkbox-large-size;
-    padding-left: @checkbox-large-size*1.5;
-    min-width: @checkbox-large-size;
-    min-height: @checkbox-large-size;
-  }
-
-  &:hover {
-    &:before {
-      animation-duration: 0.4s;
-      animation-fill-mode: both;
-      animation-name: hover-color;
-    }
-  }
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    width: @checkbox-size;
-    height: @checkbox-size;
-    content: '';
-    border: 1px solid @border-color;
-    box-sizing: border-box;
-  }
-  &.lg {
-    &:before {
-      width: @checkbox-large-size;
-      height: @checkbox-large-size;
-    }
-  }
-  &:after {
-    position: absolute;
-    display: none;
-    content: '';
-  }
-}
-
-.radio[disabled] + label,
-.checkbox[disabled] + label {
-  cursor: not-allowed;
-  color: @disabled-color;
-  &:hover,
-  &:before,
-  &:after {
-    cursor: not-allowed;
-  }
-  &:hover {
-    &:before {
-      border: 1px solid @disabled-color;
-      animation-name: none;
-    }
-  }
-  &:before {
-    border-color: @disabled-color;
-  }
-}
-
-
-.radio:checked + label,
-.checkbox:checked + label {
-  &:before {
-    animation-name: none;
-  }
-  &:after {
+.checkbox,
+.radio-inline,
+.checkbox-inline {
+    /* position: absolute;
+  display: none; */
+    font-size: 14px;
+    line-height: 1.42857143;
     display: block;
-  }
+    > input {
+        position: relative;
+        display: inline-block;
+        padding-left: @checkbox-size*1.5;
+        min-width: @checkbox-size;
+        min-height: @checkbox-size;
+        cursor: pointer;
+        vertical-align: middle;
+        margin-top: 0;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: @checkbox-size;
+            height: @checkbox-size;
+            content: '';
+            border: 1px solid @border-color;
+            box-sizing: border-box;
+            background: #fff;
+        }
+        &:after {
+            position: absolute;
+            display: none;
+            content: '';
+        }
+        
+        &:hover {
+            &:before {
+                animation-duration: 0.4s;
+                animation-fill-mode: both;
+                animation-name: hover-color;
+            }
+        }
+        &:checked {
+            &:before {
+                animation-name: none;
+            }
+            &:after {
+                display: block;
+            }
+        }
+        &.lg {
+            line-height: @checkbox-large-size;
+            padding-left: @checkbox-large-size*1.5;
+            min-width: @checkbox-large-size;
+            min-height: @checkbox-large-size;
+            &:before {
+                width: @checkbox-large-size;
+                height: @checkbox-large-size;
+            }
+        }
+        &[disabled] {
+            cursor: not-allowed;
+            color: @disabled-color;
+            &:hover,
+            &:before,
+            &:after {
+                cursor: not-allowed;
+            }
+            &:hover {
+                &:before {
+                    border: 1px solid @disabled-color;
+                    animation-name: none;
+                }
+            }
+            &:before {
+                border-color: @disabled-color;
+            }
+        }
+    }
+}
+.radio-inline,
+.checkbox-inline {
+  display: inline-block;
 }

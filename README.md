@@ -5,6 +5,8 @@ Beautify Radio and Checkbox.
 
 [Demo](https://github.com/chutou/css-checkbox-radio)
 
+![Alt text](img/demo.png)
+
 ### Install
 - bower: `bower install --save css-checkbox-radio`
 - npm: `npm install --save css-checkbox-radio`
@@ -22,31 +24,31 @@ Beautify Radio and Checkbox.
     <div class="col-6">
         <h2>checkbox default</h2>
         <div>
-            <input class="checkbox" type="checkbox" name="layout" id="1">
-            <label for="1">Normal</label>
+            <label class="checkbox">
+                <input type="checkbox" name="layout" id="1"> Normal</label>
         </div>
         <div>
-            <input class="checkbox" type="checkbox" name="layout" id="2" checked="checked">
-            <label for="2">Checked</label>
-        </div>
-        <div>
-            <input class="checkbox" type="checkbox" name="layout" id="3" disabled="disabled">
-            <label for="3">
-                Disabled
+            <label class="checkbox">
+                <input type="checkbox" name="layout" id="2" checked="checked"> Checked
             </label>
         </div>
         <div>
-            <input class="checkbox" type="checkbox" name="layout" id="4" checked disabled="disabled">
-            <label for="4">Checked && Disabled</label>
+            <label class="checkbox">
+                <input type="checkbox" name="layout" id="3" disabled="disabled"> Disabled
+            </label>
+        </div>
+        <div>
+            <label class="checkbox">
+                <input type="checkbox" name="layout" id="4" checked disabled="disabled"> Checked && Disabled</label>
         </div>
         <h2>checkbox large</h2>
         <div>
-            <input class="checkbox" type="checkbox" name="layout" id="10">
-            <label class="lg" for="10">Normal</label>
+            <label class="checkbox" for="10">
+                <input class="lg" type="checkbox" name="layout" id="10"> Normal</label>
         </div>
         <div>
-            <input class="checkbox" type="checkbox" name="layout" id="20" checked="checked">
-            <label class="lg" for="20">Checked</label>
+            <label class="checkbox" for="20">
+                <input class="lg" type="checkbox" name="layout" id="20" checked="checked"> Checked</label>
         </div>
     </div>
 ```
@@ -57,29 +59,29 @@ Beautify Radio and Checkbox.
 <div class="col-6">
         <h2>radio default</h2>
         <div>
-            <input class="radio" type="radio" name="radio" id="11">
-            <label for="11">Normal</label>
+            <label class="radio">
+                <input type="radio" name="radio" id="11"> Normal</label>
         </div>
         <div>
-            <input class="radio" type="radio" name="radio" id="22" checked>
-            <label for="22">Checked</label>
+            <label class="radio">
+                <input type="radio" name="radio" id="22" checked> Checked</label>
         </div>
         <div>
-            <input class="radio" type="radio" id="33" disabled="disabled">
-            <label for="33">Disabled</label>
+            <label class="radio">
+                <input type="radio" id="33" disabled="disabled"> Disabled</label>
         </div>
         <div>
-            <input class="radio" type="radio" id="44" disabled="disabled" checked>
-            <label for="44">Checked && Disabled</label>
+            <label class="radio">
+                <input type="radio" id="44" disabled="disabled" checked> Checked && Disabled</label>
         </div>
         <h2>radio large</h2>
         <div>
-            <input class="radio" type="radio" name="radio-large" id="101">
-            <label class="lg" for="101">Normal</label>
+            <label class="radio" for="101">
+                <input class="lg" type="radio" name="radio-large" id="101"> Normal</label>
         </div>
         <div>
-            <input class="radio" type="radio" name="radio-large" id="202" checked>
-            <label class="lg" for="202">Checked</label>
+            <label class="radio" for="202">
+                <input class="lg" type="radio" name="radio-large" id="202" checked> Checked</label>
         </div>
     </div>
 ```
