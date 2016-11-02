@@ -3,7 +3,7 @@ Beautify Radio and Checkbox.
 
 ### Demo
 
-[Demo](https://github.com/chutou/css-checkbox-radio)
+[Demo](https://chutou.github.io/css-checkbox-radio/)
 
 ![Alt text](img/demo.png)
 
