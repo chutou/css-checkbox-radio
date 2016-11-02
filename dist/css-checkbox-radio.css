@@ -28,7 +28,7 @@
 .radio + label,
 .checkbox + label {
   position: relative;
-  display: block;
+  display: inline-block;
   padding-left: 30px;
   min-width: 20px;
   min-height: 20px;
