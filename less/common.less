@@ -25,11 +25,15 @@
   position: relative;
   display: block;
   padding-left: @checkbox-size*1.5;
+  min-width: @checkbox-size;
+  min-height: @checkbox-size;
   cursor: pointer;
   vertical-align: middle;
   &.lg {
     line-height: @checkbox-large-size;
     padding-left: @checkbox-large-size*1.5;
+    min-width: @checkbox-large-size;
+    min-height: @checkbox-large-size;
   }
 
   &:hover {
